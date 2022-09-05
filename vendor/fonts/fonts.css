@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-weight: 400;
+  src: url('./MontserratAlternates-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-weight: 100;
+  src: url('./MontserratAlternates-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-weight: 600;
+  src: url('./MontserratAlternates-SemiBold.ttf');
+}

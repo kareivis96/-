@@ -1,0 +1,18 @@
+/* fonts and reset styles */
+@import url('../vendor/fonts/fonts.css');
+@import url('../vendor/reset.css');
+
+/* main styles */
+@import url('../blocks/body/body.css');
+
+/* lead-block styles */
+@import url('../blocks/lead/lead.css');
+@import url('../blocks/rotate/rotate.css');
+@import url('../blocks/jumping/jumping.css');
+
+/* main-block styles */
+@import url('../blocks/main/main.css');
+
+/* header-block styles */
+@import url('../blocks/header/header.css');
+@import url('../blocks/menu-button/menu-button.css');

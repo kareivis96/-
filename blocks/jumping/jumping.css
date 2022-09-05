@@ -1,0 +1,12 @@
+@keyframes jumping {
+  0% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(5px);
+  }
+}
+
+.jumping {
+  animation: jumping 2s ease infinite;
+}

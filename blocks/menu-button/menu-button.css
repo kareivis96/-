@@ -1,0 +1,45 @@
+.menu-button {
+  position: relative;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: all .3s ease;
+}
+.menu-button__element {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: white;
+  top: 23px;
+  left: 10px;
+}
+.menu-button__element::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: white;
+  top: -10px;
+  transition: all .3s ease;
+}
+.menu-button__element::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: white;
+  top: 10px;
+  transition: all .3s ease;
+}
+
+.active .menu-button__element::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.active .menu-button__element::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+.active .menu-button__element {
+  height: 0;
+}

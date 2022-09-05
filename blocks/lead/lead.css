@@ -1,0 +1,141 @@
+.lead {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #16b1e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 30px 30px 0;
+  color: white;
+}
+
+.lead__content-block {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.lead__logo {
+  max-width: 250px;
+  margin: 0 0 50px 0;
+}
+.lead__title {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.lead__subtitle {
+  max-width: 640px;
+  font-size: 30px;
+  line-height: 1.1;
+}
+.lead__paragraph {
+  font-size: 24px;
+  line-height: 1.1;
+}
+.lead__button {
+  max-width: 300px;
+  background: #ffa41c;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #ffa41c;
+  border-radius: 50px;
+  font-size: 24px;
+  line-height: 1.1;
+  color: white;
+  cursor: pointer;
+  margin: 0 0 50px 0;
+  transition: all 0.5s ease;
+}
+
+.lead__button:hover {
+  background: #f09100;
+  border: 1px solid #f09100;
+  transform: scale(1.05);
+}
+
+.lead__link {
+  align-self: center;
+  justify-self: flex-end;
+}
+.lead__arrow {
+  max-width: 50px;
+}
+
+.lead__pic-block {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  width: 40%;
+}
+.lead__pic {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.lead__triangle {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 80%;
+}
+
+@media (max-width: 1450px) {
+  .lead__title {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .lead__subtitle {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 750px) {
+  .lead__pic-block {
+    display: none;
+  }
+  .lead__content-block {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .lead__logo {
+    margin: 0 0 30px 0;
+  }
+  .lead__title {
+    font-size: 45px;
+  }
+  .lead__subtitle {
+    font-size: 24px;
+  }
+  .lead__paragraph {
+    font-size: 20px;
+  }
+  .lead__button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .lead__title {
+    font-size: 35px;
+  }
+  .lead__subtitle {
+    font-size: 20px;
+  }
+  .lead__paragraph {
+    font-size: 18px;
+  }
+  .lead__button {
+    font-size: 18px;
+  }
+}
