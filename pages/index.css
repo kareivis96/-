@@ -16,3 +16,9 @@
 /* header-block styles */
 @import url('../blocks/header/header.css');
 @import url('../blocks/menu-button/menu-button.css');
+
+/* about-us-block styles */
+@import url('../blocks/about-us/about-us.css');
+
+/* why-are-we-block styles */
+@import url('../blocks/why-are-we/why-are-we.css');

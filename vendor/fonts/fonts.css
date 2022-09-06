@@ -12,6 +12,12 @@
 
 @font-face {
   font-family: 'Montserrat Alternates';
+  font-weight: 500;
+  src: url('./MontserratAlternates-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat Alternates';
   font-weight: 600;
   src: url('./MontserratAlternates-SemiBold.ttf');
 }

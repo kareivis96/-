@@ -1,0 +1,47 @@
+.why-are-we {
+  background: #16b1e4;
+  box-sizing: border-box;
+  padding: 50px 10px;
+  color: #004864;
+}
+.why-are-we__content-block {
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1650px;
+}
+.why-are-we__title {
+  border: 1px solid #000;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: white;
+}
+.why-are-we__card-block {
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.why-are-we__card {
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+
+  width: 230px;
+  min-height: 350px;
+  background: #fff;
+}
+.why-are-we__card-img {
+  border: 1px solid #000;
+  height: 50px;
+  width: 50px;
+}
+.why-are-we__card-title {
+  border: 1px solid #000;
+}
+.why-are-we__card-text {
+  border: 1px solid #000;
+}
