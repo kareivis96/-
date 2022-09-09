@@ -48,13 +48,19 @@
   color: white;
   cursor: pointer;
   margin: 0 0 50px 0;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .lead__button:hover {
   background: #f09100;
   border: 1px solid #f09100;
   transform: scale(1.05);
+}
+
+.lead__button:active {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease;
 }
 
 .lead__link {
