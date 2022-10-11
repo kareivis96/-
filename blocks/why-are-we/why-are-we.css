@@ -1,90 +1,85 @@
 /* стили блоков */
 .why-are-we {
-  background: #16b1e4;
+  background: rgb(22, 177, 228);
   box-sizing: border-box;
-  padding: 50px 10px;
+  padding: 50px 10px 0;
   color: #004864;
 }
+
 .why-are-we__content-block {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin: 0 auto;
-  max-width: 1650px;
 }
+
 .why-are-we__title {
   font-size: 40px;
   font-weight: 500;
   line-height: 1.1;
   color: white;
 }
-.why-are-we__card-block {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-}
 
-@media (max-width: 1450px) {
-  .why-are-we__content-block {
-    max-width: 940px;
-  }
-  .why-are-we__card-block {
-    gap: 20px;
-  }
-}
-@media (max-width: 750px) {
-  .why-are-we__content-block {
-    max-width: 550px;
-    padding: 0 5px;
-  }
-  .why-are-we__card-block {
-    gap: 10px;
-  }
-}
-@media (max-width: 500px) {
-  .why-are-we__content-block {
-    align-items: center;
-  }
-  .why-are-we__card-block {
-    max-width: 250px;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
+.why-are-we__card-block {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 0 -100px;
 }
 
 /* стили карточек */
 .why-are-we__card {
+  border: 5px solid #16b1e4;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px 0;
   box-sizing: border-box;
-  padding: 5px 7px;
-  width: 230px;
+  padding: 10px 15px;
   border-radius: 4px;
   min-height: 350px;
   background: #fff;
   transition: all .3s ease;
 }
+
 .why-are-we__card:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, .5);
+  transform: translateY(20px);
 }
+
 .why-are-we__card-img {
-  height: 50px;
-  width: 50px;
+  width: 35%;
 }
+
 .why-are-we__card-title {
+  max-width: 250px;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 1;
 }
+
 .why-are-we__card-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.15;
   text-align: center;
 }
+
+@media (max-width: 850px) {
+  .why-are-we__card-block {
+    grid-template-columns: minmax(250px, 1fr);
+    max-width: 500px;
+  }
+
+  .why-are-we__card-img {
+    width: 25%;
+  }
+
+  .why-are-we__card-block {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {}

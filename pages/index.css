@@ -4,11 +4,13 @@
 
 /* main styles */
 @import url('../blocks/body/body.css');
+@import url('../blocks/_wrapper-1440-center/_wrapper-1440-center.css');
 
 /* lead-block styles */
 @import url('../blocks/lead/lead.css');
 @import url('../blocks/rotate/rotate.css');
 @import url('../blocks/jumping/jumping.css');
+@import url('../blocks/pulse/pulse.css');
 
 /* main-block styles */
 @import url('../blocks/main/main.css');
@@ -22,3 +24,12 @@
 
 /* why-are-we-block styles */
 @import url('../blocks/why-are-we/why-are-we.css');
+
+/* slider-block styles */
+@import url('../blocks/slider/slider.css');
+
+/* contacts-block styles */
+@import url('../blocks/contacts/contacts.css');
+
+/* footer styles */
+@import url('../blocks/footer/footer.css');

@@ -38,10 +38,10 @@
 }
 .lead__button {
   max-width: 300px;
-  background: #ffa41c;
+  background: #ffb341;
   box-sizing: border-box;
   padding: 20px;
-  border: 1px solid #ffa41c;
+  border: 1px solid #ffb341;
   border-radius: 50px;
   font-size: 24px;
   line-height: 1.1;
@@ -54,7 +54,6 @@
 .lead__button:hover {
   background: #f09100;
   border: 1px solid #f09100;
-  transform: scale(1.05);
 }
 
 .lead__button:active {

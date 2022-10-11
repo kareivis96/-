@@ -15,7 +15,7 @@ const header = document.querySelector('.header');
 const scrollPosition = () => window.pageYOffset;
 const isContainHide = () => header.classList.contains('_hide');
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   if (scrollPosition() > lastScroll && !isContainHide() && scrollPosition() > defaultOffset) {
     //scroll down
     header.classList.add('_hide');
@@ -25,4 +25,17 @@ window.addEventListener('scroll', function() {
   }
 
   lastScroll = scrollPosition();
+});
+
+// открытие слайдера
+const sliderHeading = document.querySelectorAll('.slider__heading');
+
+sliderHeading.forEach((el) => {
+  el.addEventListener('click', () => {
+    const sliderParagraph = el.closest('.slider__list-element').querySelector('.slider__paragraph');
+
+    document.querySelectorAll('.slider__paragraph').forEach((el) => el.classList.remove('slider__paragraph_visible'));
+
+    sliderParagraph.classList.toggle('slider__paragraph_visible');
+  });
 });
