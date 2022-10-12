@@ -1,7 +1,7 @@
 .slider {
   box-sizing: border-box;
   margin: 140px 0 0;
-  padding: 0 10px;
+  padding: 0 10px 50px;
 }
 
 .slider__container {

@@ -1,0 +1,48 @@
+.recalls {
+  box-sizing: border-box;
+  padding: 50px 10px;
+  background-color: #16b1e4;
+  color: #fff;
+  overflow: hidden;
+}
+
+.recalls__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.recalls__heading {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: white;
+}
+
+.recalls__cards {
+  display: flex;
+  gap: 10px;
+}
+
+.recalls__left-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recalls__right-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 850px) {
+  .recalls__cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

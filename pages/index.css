@@ -28,6 +28,10 @@
 /* slider-block styles */
 @import url('../blocks/slider/slider.css');
 
+/* recall-block styles */
+@import url('../blocks/recalls/recalls.css');
+@import url('../blocks/card/card.css');
+
 /* contacts-block styles */
 @import url('../blocks/contacts/contacts.css');
 
