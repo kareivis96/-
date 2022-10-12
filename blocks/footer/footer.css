@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-top: 5px solid #ffb341;
+  padding: 0 30px;
+  min-height: 60px;
+  background-color: #16b1e4;
+}
+
+.footer__copyright {
+  color: #fff;
+}
+
+.footer__contacts {
+  display: flex;
+  gap: 30px;
+}
+
+.footer__img {
+  height: 30px;
+  width: 30px;
+  transition: all .3s ease;
+}
+
+.footer__img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 10px 10px;
+  }
+}

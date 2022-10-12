@@ -1,0 +1,78 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px;
+  min-height: 190px;
+  background-color: #fff;
+  color: #004864;
+  opacity: 0;
+}
+
+.card_left {
+  left: -1000px;
+}
+
+.card_type_visible_left {
+  left: 0;
+  opacity: 1;
+  transition: left 2s ease, opacity 3s ease;
+}
+
+.card_right {
+  right: -1000px;
+}
+
+.card_type_visible_right {
+  right: 0;
+  opacity: 1;
+  transition: right 2s ease, opacity 3s ease;
+}
+
+.card__profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__avatar {
+  border: 2px solid #16b1e4;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.card__paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.card__place {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.card__raiting {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  height: 30px;
+}
+
+.card__raiting-img {
+  height: 30px;
+  width: 30px;
+}
+
+.card__review {}
