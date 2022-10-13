@@ -32,6 +32,9 @@
 @import url('../blocks/recalls/recalls.css');
 @import url('../blocks/card/card.css');
 
+/* how-we-work-block styles */
+@import url('../blocks/how-we-work/how-we-work.css');
+
 /* contacts-block styles */
 @import url('../blocks/contacts/contacts.css');
 

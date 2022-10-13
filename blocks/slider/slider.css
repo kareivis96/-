@@ -50,6 +50,7 @@
   transform: scaley(0);
   transform-origin: top;
   transition: all .5s ease;
+  cursor: default;
 }
 
 .slider__paragraph_visible {

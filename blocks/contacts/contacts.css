@@ -55,6 +55,7 @@
   font-size: 40px;
   font-weight: 500;
   line-height: 1.1;
+  cursor: default;
 }
 
 .contacts__paragraph {
@@ -62,6 +63,7 @@
   font-size: 25px;
   font-weight: 500;
   line-height: 1;
+  cursor: default;
 }
 
 

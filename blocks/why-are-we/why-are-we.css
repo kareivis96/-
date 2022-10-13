@@ -17,6 +17,7 @@
   font-weight: 500;
   line-height: 1.1;
   color: white;
+  cursor: default;
 }
 
 .why-are-we__card-block {
@@ -58,6 +59,7 @@
   font-size: 25px;
   font-weight: 500;
   line-height: 1;
+  cursor: default;
 }
 
 .why-are-we__card-text {
@@ -65,6 +67,7 @@
   font-weight: 400;
   line-height: 1.15;
   text-align: center;
+  cursor: default;
 }
 
 @media (max-width: 850px) {

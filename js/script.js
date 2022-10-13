@@ -9,7 +9,7 @@ menuButton.addEventListener('click', function () {
 
 //--скрывать хедер--
 let lastScroll = 0;
-const defaultOffset = document.documentElement.clientHeight + 100;
+const defaultOffset = document.documentElement.clientHeight + 200;
 const header = document.querySelector('.header');
 
 const scrollPosition = () => window.pageYOffset;
