@@ -1,5 +1,6 @@
 .card {
   position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -46,24 +47,28 @@
 }
 
 .card__paragraph {
+  cursor: default;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
 .card__name {
+  cursor: default;
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
 }
 
 .card__place {
+  cursor: default;
   font-weight: 400;
   font-size: 20px;
   line-height: 1;
 }
 
 .card__raiting {
+  cursor: default;
   display: flex;
   align-items: flex-end;
   gap: 5px;
@@ -75,4 +80,7 @@
   width: 30px;
 }
 
-.card__review {}
+.card__review {
+  cursor: default;
+  text-align: left;
+}
