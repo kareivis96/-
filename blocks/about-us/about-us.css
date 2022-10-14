@@ -4,7 +4,7 @@
   justify-content: space-between;
   color: #006c95;
   box-sizing: border-box;
-  padding: 50px 100px 20px 0;
+  padding: 50px 0;
 }
 
 .about-us__content-block {
@@ -61,10 +61,6 @@
 
   .about-us__paragraph {
     max-width: 100%;
-  }
-
-  .about-us__content-block {
-    align-items: center;
     text-align: center;
   }
 }

@@ -45,6 +45,7 @@
 }
 
 .lead__button {
+  outline: none;
   max-width: 300px;
   background: #ffb341;
   box-sizing: border-box;
@@ -71,6 +72,8 @@
 }
 
 .lead__link {
+  outline: none;
+  border: none;
   align-self: center;
   justify-self: flex-end;
 }

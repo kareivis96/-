@@ -28,9 +28,9 @@ window.addEventListener('scroll', function () {
 });
 
 // открытие слайдера
-const sliderHeading = document.querySelectorAll('.slider__heading');
+const sliderHeadingArray = document.querySelectorAll('.slider__heading');
 
-sliderHeading.forEach((el) => {
+sliderHeadingArray.forEach((el) => {
   el.addEventListener('click', () => {
     const sliderParagraph = el.closest('.slider__list-element').querySelector('.slider__paragraph');
 

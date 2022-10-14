@@ -40,3 +40,18 @@
 
 /* footer styles */
 @import url('../blocks/footer/footer.css');
+
+/* popup styles */
+@import url('../blocks/close-button/close-button.css');
+@import url('../blocks/popup/popup.css');
+@import url('../blocks/popup/_opened/popup_opened.css');
+@import url('../blocks/popup/__container/popup__container.css');
+@import url('../blocks/popup/__heading/popup__heading.css');
+@import url('../blocks/popup/__form/popup__form.css');
+@import url('../blocks/popup/__input-wrapper/popup__input-wrapper.css');
+@import url('../blocks/popup/__input/popup__input.css');
+@import url('../blocks/popup/__input/_type/popup__input_type_invalid.css');
+@import url('../blocks/popup/__error-text/popup__error-text.css');
+@import url('../blocks/popup/__error-text/_type/popup__error-text_type_visible.css');
+@import url('../blocks/popup/__save-button/popup__save-button.css');
+@import url('../blocks/popup/__save-button/_disabled/popup__save-button_disabled.css');

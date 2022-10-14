@@ -3,6 +3,7 @@ html{
 }
 
 .body {
+  position: relative;
   font-family: 'Montserrat Alternates';
   color: gray;
 }
