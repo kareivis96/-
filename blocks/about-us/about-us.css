@@ -2,16 +2,17 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  gap: 10px;
   color: #006c95;
   box-sizing: border-box;
-  padding: 50px 0;
+  padding: 50px 10px;
 }
 
 .about-us__content-block {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  row-gap: 30px;
+  row-gap: 10px;
   box-sizing: border-box;
 }
 
@@ -20,6 +21,7 @@
   font-weight: 500;
   line-height: 1.1;
   cursor: default;
+  margin: 0 0 20px;
 }
 
 .about-us__paragraph {
@@ -27,6 +29,7 @@
   font-size: 20px;
   line-height: 1.25;
   cursor: default;
+  text-indent: 40px;
 }
 
 .about-us__pic {
@@ -46,7 +49,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .about-us {
     padding: 25px 10px 10px;
     flex-direction: column;
@@ -62,6 +65,7 @@
   .about-us__paragraph {
     max-width: 100%;
     text-align: center;
+    align-self: center;
   }
 }
 

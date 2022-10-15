@@ -2,6 +2,7 @@ const popup = document.querySelector('.popup');
 const buttonOpenPopupFirst = document.querySelector('.lead__button');
 const buttonOpenPopupSecond = document.querySelector('.contacts__button');
 const buttonToclosePopup = document.querySelector('.close-button');
+const form = document.querySelector('.popup__form');
 
 
 
@@ -34,6 +35,14 @@ function openPopup(popupToOpen) {
 
   document.addEventListener('keydown', hendlerToClosePopupOnClickEsc);
 };
+// обработчик отправки формы
+function hendlerSubmitForm(evt) {
+  evt.preventDefault();
+
+  evt.currentTarget.submit();
+  evt.currentTarget.reset();
+};
+
 
 // слушвтели на открытие и закрытие попапа
 buttonOpenPopupFirst.addEventListener('click', () => {
@@ -45,3 +54,5 @@ buttonOpenPopupSecond.addEventListener('click', () => {
 buttonToclosePopup.addEventListener('click', () => {
   closePopup(popup);
 });
+
+form.addEventListener('submit', hendlerSubmitForm);

@@ -79,10 +79,6 @@ function enableValidation(configObject) {
   const formList = Array.from(document.querySelectorAll(configObject.popupFormSelector));
 
   formList.forEach((formElement) => {
-    formElement.addEventListener('submit', (evt) => {
-      evt.preventDefault();
-    });
-
     setEventListeners(configObject, formElement);
   });
 };
