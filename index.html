@@ -45,11 +45,15 @@
     <section id="about-us" class="about-us _wrapper-1440-center">
       <div class="about-us__content-block">
         <h2 class="about-us__title">Немного о нас</h2>
-        <p class="about-us__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestiae
-          illum corporis in id? Aliquid quos, cumque repellat porro possimus recusandae blanditiis pariatur omnis, nobis
-          voluptatibus eius autem neque unde laudantium? Expedita eligendi et aperiam odio, illum quisquam fuga alias
-          neque blanditiis numquam rerum quasi unde animi veniam. A eligendi, placeat maiores ad inventore distinctio!
-          iste quibusdam animi omnis odit!</p>
+        <p class="about-us__paragraph">С 2017 года Качественное образование помогает в учебе студентам от Калининграда
+          до Владивостока. За эти годы мы успешно
+          помогли защитить им более сотни дипломов, более тысячи курсовых работ, отчётов по практике, рефератов,
+          презентаций!</p>
+        <p class="about-us__paragraph">Мы оказываем помощь на любом этапе выполнения работ, вплоть до структурирования
+          научных материалов, редакционного контроля, а также подбора нужных для написания работы материалов.</p>
+        <p class="about-us__paragraph">Качественное образование предлагает
+          низкие цены на свои услуги, качественную помощь, круглосуточную поддержку в любых учебных вопросах.</p>
+        <p class="about-us__paragraph">Сделай свою учебу успешней! Вы отдыхаете, а мы работаем!</p>
       </div>
       <img src="./images/about-us/about-us-main-pic.png" alt="офис" class="about-us__pic">
     </section>
@@ -263,11 +267,11 @@
         <div class="contacts__right-column">
           <h3 class="contacts__heading">Так же можете написать нам</h3>
           <ul class="contacts__contact-list">
-            <li><a href="#" class="contacts__link">В Telegram<img src="./images/footer/TG-icon.png" alt="телеграмм"
+            <li><a href="#" class="contacts__link" target="_blank">В Telegram<img src="./images/footer/TG-icon.png" alt="телеграмм"
                   class="contacts__icon"></a></li>
-            <li><a href="#" class="contacts__link">В Вконтакте<img src="./images/footer/vk-icon.png" alt="вконтакте"
+            <li><a href="#" class="contacts__link" target="_blank">В Вконтакте<img src="./images/footer/vk-icon.png" alt="вконтакте"
                   class="contacts__icon"></a></li>
-            <li><a href="#" class="contacts__link">В Instagram<img src="./images/footer/inst-icon.png" alt="инстаграм"
+            <li><a href="#" class="contacts__link" target="_blank">В Instagram<img src="./images/footer/inst-icon.png" alt="инстаграм"
                   class="contacts__icon"></a></li>
           </ul>
           <p class="contacts__paragraph">Или позвонить по номеру <a href="tel:+79896356066"
@@ -279,20 +283,20 @@
   <footer class="footer">
     <a class="footer__copyright" href="#">&copy; 2022 Klyuchnikov Dmitry</a>
     <ul class="footer__contacts">
-      <li><a href="#" class="footer__link"><img src="./images/footer/TG-icon.png" alt="телеграмм"
+      <li><a href="#" class="footer__link" target="_blank"><img src="./images/footer/TG-icon.png" alt="телеграмм"
             class="footer__img"></a></li>
-      <li><a href="#" class="footer__link"><img src="./images/footer/vk-icon.png" alt="вконтакте"
+      <li><a href="#" class="footer__link" target="_blank"><img src="./images/footer/vk-icon.png" alt="вконтакте"
             class="footer__img"></a></li>
-      <li><a href="#" class="footer__link"><img src="./images/footer/inst-icon.png" alt="инстаграм"
+      <li><a href="#" class="footer__link" target="_blank"><img src="./images/footer/inst-icon.png" alt="инстаграм"
             class="footer__img"></a></li>
     </ul>
   </footer>
   <div class="popup">
     <div class="popup__container">
       <h2 class="popup__heading">Заполните форму</h2>
-      <form name="addForm" class="popup__form">
+      <form action="telegram.php" method="POST" name="addForm" class="popup__form">
         <div class="popup__input-wrapper">
-          <input name="Name" type="text" class="popup__input" placeholder="Ваше имя" required minlength="2"
+          <input name="name" type="text" class="popup__input" placeholder="Ваше имя" required minlength="2"
             maxlength="30">
           <p class="popup__error-text"></p>
         </div>
@@ -301,12 +305,12 @@
           <p class="popup__error-text"></p>
         </div>
         <div class="popup__input-wrapper">
-          <input name="tel" type="tel" class="popup__input" placeholder="Номер телефона" required>
+          <input name="phone" type="tel" class="popup__input" placeholder="Номер телефона" required>
           <p class="popup__error-text"></p>
         </div>
         <div class="popup__input-wrapper">
           <select name="work" class="popup__input" required>
-            <option default>Выберите тип работы</option>
+            <option selected value="">Выберите тип работы</option>
             <option value="Диплом ВО">Диплом высшее образование</option>
             <option value="Диплом СПО">Диплом среднее проф.образование</option>
             <option value="Курсовая">Курсовая работа</option>
@@ -318,8 +322,15 @@
           <p class="popup__error-text"></p>
         </div>
         <div class="popup__input-wrapper">
-          <textarea name="wishes" class="popup__input" placeholder="Особые пожелания к работе" cols="30" rows="10"></textarea>
+          <textarea name="wishes" class="popup__input" placeholder="Заметки к работе"></textarea>
           <p class="popup__error-text"></p>
+        </div>
+        <div class="popup__input-wrapper">
+          <label class="popup__label">
+            <input name="checkbox" type="checkbox" class="popup__input popup__input_type_checkbox" required>
+            Я даю согласие на обработку данных
+            <p class="popup__error-text"></p>
+          </label>
         </div>
         <button type="submit" class="popup__save-button">Отправить</button>
       </form>
